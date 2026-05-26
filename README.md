@@ -117,11 +117,11 @@ $ docker compose up --build
 ## Ссылки
 Docker compose
 
-Install the Docker Compose plugin
+https://docs.docker.com/compose/install/linux/
 
 Dockerfile
 
-Как запаковать простое приложение в Docker: на пальцах
+https://habr.com/ru/companies/slurm/articles/930822/
 
 
 # Домашнее задание
