@@ -1,0 +1,460 @@
+Script started on 2026-05-23 18:15:56+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;Gor-debug@Osnovnaya: ~[01;32mGor-debug@Osnovnaya[00m:[01;34m~[00m$ [7mecho "deb [arch=$(dpkg --print-architecture) signed-by=/etc[27m[7m/[27m[7mapt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-r[27m[7me[27m[7mlease && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/d[27m[7mo[27m[7mcker.list > /dev/null[27m[A[A[Aecho "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+[?2004l
+[sudo] password for Gor-debug: 
+[?2004h]0;Gor-debug@Osnovnaya: ~[01;32mGor-debug@Osnovnaya[00m:[01;34m~[00m$ [7msudo apt-get update[27msudo apt-get update
+[?2004l
+\\
+0% [Working]
+            
+Get:1 file:/cdrom noble InRelease
+
+            
+Ign:1 file:/cdrom noble InRelease
+
+0% [Working]
+            
+Get:2 file:/cdrom noble Release
+
+            
+Err:2 file:/cdrom noble Release
+  File not found - /cdrom/dists/noble/Release (2: No such file or directory)
+
+0% [Working]
+            
+Hit:3 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+
+0% [Connecting to download.docker.com (3.164.240.119)] [Connecting to security.
+                                                                               
+Hit:4 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease
+
+                                                                               
+0% [Connected to download.docker.com (3.164.240.119)] [Waiting for headers]
+                                                                           
+Hit:5 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
+
+0% [Connected to download.docker.com (3.164.240.119)] [Waiting for headers]
+                                                                           
+Hit:6 http://security.ubuntu.com/ubuntu noble-security InRelease
+
+                                                                           
+0% [Connected to download.docker.com (3.164.240.119)]
+                                                     
+Get:7 https://download.docker.com/linux/ubuntu noble InRelease [48,5 kB]
+
+                                                     
+0% [7 InRelease 0 B/48,5 kB 0%]
+                               
+0% [Working]
+0% [Working]
+0% [Working]
+0% [Working]
+0% [Working]
+57% [Working]
+             
+Get:8 https://download.docker.com/linux/ubuntu noble/stable amd64 Packages [55,7 kB]
+
+69% [8 Packages 15,9 kB/55,7 kB 29%]
+                                    
+100% [Working]
+100% [8 Packages store 0 B]
+                           
+100% [Working]
+              
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 3%
+
+Reading package lists... 3%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 29%
+
+Reading package lists... 34%
+
+Reading package lists... 34%
+
+Reading package lists... 47%
+
+Reading package lists... 47%
+
+Reading package lists... 48%
+
+Reading package lists... 48%
+
+Reading package lists... 48%
+
+Reading package lists... 48%
+
+Reading package lists... 52%
+
+Reading package lists... 52%
+
+Reading package lists... 56%
+
+Reading package lists... 56%
+
+Reading package lists... 63%
+
+Reading package lists... 63%
+
+Reading package lists... 65%
+
+Reading package lists... 69%
+
+Reading package lists... 69%
+
+Reading package lists... 73%
+
+Reading package lists... 73%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 75%
+
+Reading package lists... 79%
+
+Reading package lists... 79%
+
+Reading package lists... 82%
+
+Reading package lists... 82%
+
+Reading package lists... 89%
+
+Reading package lists... 89%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+E: The repository 'file:/cdrom noble Release' no longer has a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+[?2004h]0;Gor-debug@Osnovnaya: ~[01;32mGor-debug@Osnovnaya[00m:[01;34m~[00m$ [7msudo apt-get install -y docker-ce docker-ce-cli containerd.[27m[7mi[27m[7mo docker-buildx-plugin docker-compose-plugin[27m[A
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+
+The following packages were automatically installed and are no longer required:
+  bridge-utils ubuntu-fan
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  docker-ce-rootless-extras
+Suggested packages:
+  cgroupfs-mount | cgroup-lite docker-model-plugin
+The following packages will be REMOVED:
+  containerd docker.io runc
+The following NEW packages will be installed:
+  containerd.io docker-buildx-plugin docker-ce docker-ce-cli
+  docker-ce-rootless-extras docker-compose-plugin
+0 upgraded, 6 newly installed, 3 to remove and 156 not upgraded.
+Need to get 99,0 MB of archives.
+After this operation, 101 MB of additional disk space will be used.
+
+0% [Working]
+            
+Get:1 https://download.docker.com/linux/ubuntu noble/stable amd64 containerd.io amd64 2.2.4-1~ubuntu.24.04~noble [23,6 MB]
+
+0% [1 containerd.io 0 B/23,6 MB 0%]
+3% [1 containerd.io 3 359 kB/23,6 MB 14%]
+7% [1 containerd.io 9 027 kB/23,6 MB 38%]
+                                           
+12% [1 containerd.io 15,2 MB/23,6 MB 64%]
+17% [1 containerd.io 20,8 MB/23,6 MB 88%]
+                                         
+22% [Working]
+             
+Get:2 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-ce-cli amd64 5:29.5.2-1~ubuntu.24.04~noble [17,0 MB]
+
+22% [2 docker-ce-cli 48,6 kB/17,0 MB 0%]
+27% [2 docker-ce-cli 5 357 kB/17,0 MB 32%]
+                                            
+32% [2 docker-ce-cli 11,8 MB/17,0 MB 70%]
+                                         
+39% [Waiting for headers]
+                         
+Get:3 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-ce amd64 5:29.5.2-1~ubuntu.24.04~noble [23,0 MB]
+
+39% [3 docker-ce 36,9 kB/23,0 MB 0%]
+44% [3 docker-ce 5 996 kB/23,0 MB 26%]
+                                        
+49% [3 docker-ce 11,9 MB/23,0 MB 52%]
+53% [3 docker-ce 17,0 MB/23,0 MB 74%]
+                                     
+Get:4 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-buildx-plugin amd64 0.34.0-1~ubuntu.24.04~noble [17,2 MB]
+
+61% [4 docker-buildx-plugin 131 kB/17,2 MB 1%]
+66% [4 docker-buildx-plugin 5 816 kB/17,2 MB 34%]                10,8 MB/s 2s
+71% [4 docker-buildx-plugin 11,5 MB/17,2 MB 67%]                   10,8 MB/s 2s
+79% [Working]                                                      10,8 MB/s 1s
+                                                                               
+Get:5 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-ce-rootless-extras amd64 5:29.5.2-1~ubuntu.24.04~noble [10,2 MB]
+
+79% [5 docker-ce-rootless-extras 0 B/10,2 MB 0%]                   10,8 MB/s 1s
+83% [5 docker-ce-rootless-extras 5 455 kB/10,2 MB 54%]           10,8 MB/s 1s
+90% [Waiting for headers]                                          10,8 MB/s 0s
+                                                                               
+Get:6 https://download.docker.com/linux/ubuntu noble/stable amd64 docker-compose-plugin amd64 5.1.4-1~ubuntu.24.04~noble [8 126 kB]
+
+90% [6 docker-compose-plugin 32,3 kB/8 126 kB 0%]                10,8 MB/s 0s
+95% [6 docker-compose-plugin 5 816 kB/8 126 kB 72%]            10,8 MB/s 0s
+100% [Working]                                                     10,8 MB/s 0s
+                                                                               
+Fetched 99,0 MB in 9s (11,1 MB/s)
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 218033 files and directories currently installed.)
+Removing docker.io (29.1.3-0ubuntu3~24.04.2) ...
+'/usr/share/docker.io/contrib/nuke-graph-directory.sh' -> '/var/lib/docker/nuke-graph-directory.sh'
+[0;1;38;5;185mWarning: The unit file, source configuration file or drop-ins of docker.service changed on disk. Run 'systemctl daemon-reload' to reload units.[0m
+
+[0;1;38;5;185mStopping 'docker.service', but its triggering units are still active:[0m
+
+[0;1;38;5;185mdocker.socket[0m
+
+Removing containerd (2.2.1-0ubuntu1~24.04.2) ...
+Removing runc (1.3.4-0ubuntu1~24.04.1) ...
+Selecting previously unselected package containerd.io.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 217753 files and directories currently installed.)
+Preparing to unpack .../0-containerd.io_2.2.4-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking containerd.io (2.2.4-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../1-docker-ce-cli_5%3a29.5.2-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-ce-cli (5:29.5.2-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../2-docker-ce_5%3a29.5.2-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-ce (5:29.5.2-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-buildx-plugin.
+Preparing to unpack .../3-docker-buildx-plugin_0.34.0-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-buildx-plugin (0.34.0-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce-rootless-extras.
+Preparing to unpack .../4-docker-ce-rootless-extras_5%3a29.5.2-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-ce-rootless-extras (5:29.5.2-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-compose-plugin.
+Preparing to unpack .../5-docker-compose-plugin_5.1.4-1~ubuntu.24.04~noble_amd64.deb ...
+Unpacking docker-compose-plugin (5.1.4-1~ubuntu.24.04~noble) ...
+Setting up docker-buildx-plugin (0.34.0-1~ubuntu.24.04~noble) ...
+Setting up containerd.io (2.2.4-1~ubuntu.24.04~noble) ...
+Setting up docker-compose-plugin (5.1.4-1~ubuntu.24.04~noble) ...
+Setting up docker-ce-cli (5:29.5.2-1~ubuntu.24.04~noble) ...
+Setting up docker-ce-rootless-extras (5:29.5.2-1~ubuntu.24.04~noble) ...
+Setting up docker-ce (5:29.5.2-1~ubuntu.24.04~noble) ...
+Could not execute systemctl:  at /usr/bin/deb-systemd-invoke line 148.
+Processing triggers for man-db (2.12.0-4build2) ...
+[?2004h]0;Gor-debug@Osnovnaya: ~[01;32mGor-debug@Osnovnaya[00m:[01;34m~[00m$ [7msudo usermod -aG docker $USER[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo usermod -aG docker $USER
+[?2004l
+[?2004h]0;Gor-debug@Osnovnaya: ~[01;32mGor-debug@Osnovnaya[00m:[01;34m~[00m$ [7mdocker --version[27m
+
+[7mdocker compose version[27m[Adocker --version
+
+docker compose version
+[?2004l
+Docker version 29.5.2, build 79eb04c
+Docker Compose version v5.1.4
+[?2004h]0;Gor-debug@Osnovnaya: ~[01;32mGor-debug@Osnovnaya[00m:[01;34m~[00m$ [7mgit clone https://github.com/tp-lessons/lab_docker.git /tmp[27m[7m/[27m[7mlab_docker_template[27m[A
+]0;Gor-debug@Osnovnaya: ~[01;32mGor-debug@Osnovnaya[00m:[01;34m~[00m$ git clone https://github.com/tp-lessons/lab_docker.git /tmp/lab_docker_template
+[?2004l
+Cloning into '/tmp/lab_docker_template'...
+remote: Enumerating objects: 16, done.[K
+remote: Counting objects:   6% (1/16)[K
+remote: Counting objects:  12% (2/16)[K
+remote: Counting objects:  18% (3/16)[K
+remote: Counting objects:  25% (4/16)[K
+remote: Counting objects:  31% (5/16)[K
+remote: Counting objects:  37% (6/16)[K
+remote: Counting objects:  43% (7/16)[K
+remote: Counting objects:  50% (8/16)[K
+remote: Counting objects:  56% (9/16)[K
+remote: Counting objects:  62% (10/16)[K
+remote: Counting objects:  68% (11/16)[K
+remote: Counting objects:  75% (12/16)[K
+remote: Counting objects:  81% (13/16)[K
+remote: Counting objects:  87% (14/16)[K
+remote: Counting objects:  93% (15/16)[K
+remote: Counting objects: 100% (16/16)[K
+remote: Counting objects: 100% (16/16), done.[K
+remote: Compressing objects:   8% (1/12)[K
+remote: Compressing objects:  16% (2/12)[K
+remote: Compressing objects:  25% (3/12)[K
+remote: Compressing objects:  33% (4/12)[K
+remote: Compressing objects:  41% (5/12)[K
+remote: Compressing objects:  50% (6/12)[K
+remote: Compressing objects:  58% (7/12)[K
+remote: Compressing objects:  66% (8/12)[K
+remote: Compressing objects:  75% (9/12)[K
+remote: Compressing objects:  83% (10/12)[K
+remote: Compressing objects:  91% (11/12)[K
+remote: Compressing objects: 100% (12/12)[K
+remote: Compressing objects: 100% (12/12), done.[K
+remote: Total 16 (delta 1), reused 13 (delta 1), pack-reused 0 (from 0)[K
+Receiving objects:   6% (1/16)
+Receiving objects:  12% (2/16)
+Receiving objects:  18% (3/16)
+Receiving objects:  25% (4/16)
+Receiving objects:  31% (5/16)
+Receiving objects:  37% (6/16)
+Receiving objects:  43% (7/16)
+Receiving objects:  50% (8/16)
+Receiving objects:  56% (9/16)
+Receiving objects:  62% (10/16)
+Receiving objects:  68% (11/16)
+Receiving objects:  75% (12/16)
+Receiving objects:  81% (13/16)
+Receiving objects:  87% (14/16)
+Receiving objects:  93% (15/16)
+Receiving objects: 100% (16/16)
+Receiving objects: 100% (16/16), 5.01 KiB | 5.01 MiB/s, done.
+Resolving deltas:   0% (0/1)
+Resolving deltas: 100% (1/1)
+Resolving deltas: 100% (1/1), done.
+[?2004h]0;Gor-debug@Osnovnaya: ~[01;32mGor-debug@Osnovnaya[00m:[01;34m~[00m$ [7mmkdir -p ~/projects[27m
+
+[7mcd ~/projects[27m[A
+]0;Gor-debug@Osnovnaya: ~[01;32mGor-debug@Osnovnaya[00m:[01;34m~[00m$ mkdir -p ~/projects
+
+cd ~/projects
+[?2004l
+[?2004h]0;Gor-debug@Osnovnaya: ~/projects[01;32mGor-debug@Osnovnaya[00m:[01;34m~/projects[00m$ [7mgit clone https://github.com/Gor-debug/lab_docker.git[27m
