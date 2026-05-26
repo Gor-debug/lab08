@@ -61,9 +61,10 @@ EOF
 ```
 
 ## Сборка и запуск
+```bash
 $ docker build -t lab-docker .
 $ docker run --rm -it lab-docker
-
+```
 
 ## Docker Compose
 ```bash
