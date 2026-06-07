@@ -153,7 +153,7 @@ docker run -d --name lab-docker-container -p 5000:5000 lab-docker
 Successfully built e3b0c44298fc
 Successfully tagged lab-docker:latest
 ```
-Контейнер запущен, веб-приложение доступно по адресу http://localhost:5000.
+Контейнер запущен, веб-приложение доступно по адресу https://ominous-disco-q7w7gw9rv6w436wjq-5000.app.github.dev/
 
 
 4 Скопируйте из консоли в каталог /home/ контейнера файл README.md.
@@ -296,7 +296,7 @@ lab_docker_app | * Running on http://0.0.0.0:5000
 
 3 Проверьте подключение к приложению через браузер. Сделайте снимок экрана.
 
-Действие: Открыт браузер, в адресной строке введено http://localhost:5000.
+Действие: Открыт браузер, в адресной строке введено http:https://ominous-disco-q7w7gw9rv6w436wjq-5000.app.github.dev/
 
 Результат: Появилась веб-страница с формой добавления задач и списком.
 
@@ -329,7 +329,7 @@ lab_docker_app | * Running on http://0.0.0.0:5000
 
 Монтирование volumes и инициализация базы данных через init.sql.
 
-Проверка работы связки через браузер по адресу http://localhost:5000, добавление задач, сохранение данных в БД.
+Проверка работы связки через браузер по адресу https://ominous-disco-q7w7gw9rv6w436wjq-5000.app.github.dev/, добавление задач, сохранение данных в БД.
 
 Основные команды Docker: docker build, docker run, docker exec, docker stop, docker compose up --build.
 
