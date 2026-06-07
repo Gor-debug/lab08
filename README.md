@@ -282,7 +282,7 @@ CREATE TABLE IF NOT EXISTS tasks (
 docker compose up --build
 ```
 
-Вывод (сокращённо):
+Вывод:
 ```bash
 [+] Building 1.0s (12/12) FINISHED
 ...
